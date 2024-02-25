@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/c2.css')}}">
+</head>
+<body>
+    <center>
+        <h1>Properties of Html page by using static folder</h1>
+        <h1>{{name}}</h1>
+        <img src="{{ url_for('static',filename='images/ani1.jpg')}}" alt="" height="500px" width="500px">
+
+        <h1><a href="{{ url_for('send_html') }}">Go To Send_Html Page</a></h1>
+    </center>
+</body>
+</html>
